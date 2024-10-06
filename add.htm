@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mongoose</title>
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body style="background-image: url('./dice.jpg');background-position: center;">
+    <div class="card">
+        <h4 style="color: blueviolet;">Add products</h4>
+        <form action="http://localhost:3000/products" method="post" style="width:60%;margin: auto;">
+            <input class="input" data-role="input" type="text" name="name" id="name" placeholder="name" data-autocomplete="Nokia,Samsung,Tecno,Redmi,Iphone"
+            >
+            <br>
+            <input class="input" data-role="input" type="text" name="description" id="description" placeholder="description" >
+            <br>
+            <input class="input" data-role="input" type="number" name="price" id="price" placeholder="price" >
+            <br>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h4 style="color: blueviolet;">Search products</h4>
+        <form action="http://localhost:3000/products/search/:" method="post" style="width:60%;margin: auto;">
+            <input data-role="input" type="search" data-search-button="true" name="name" id="name" placeholder="Search" data-autocomplete="">
+            <br>
+            <button type="submit" class="button">Search</button>
+        </form>
+    </div>
+    <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
